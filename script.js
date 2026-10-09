@@ -1,8 +1,8 @@
 // ====== EDITE AQUI ======
-var WHATSAPP = "5521999999999"; // país + DDD + número, só dígitos
+var WHATSAPP = "5521978914470"; // país + DDD + número, só dígitos
 var SAUDACAO = "Olá! Vim pelo site da Malf Capital e gostaria de um orçamento.";
-var SUPABASE_URL = "https://SEU-PROJETO.supabase.co";
-var SUPABASE_ANON_KEY = "SUA_CHAVE_ANON_PUBLICA";
+var SUPABASE_URL = "https://xcmkhdbzbffchxbemfyz.supabase.co";
+var SUPABASE_ANON_KEY = "sb_publishable_2_96w0tfp-wsYoO1D-870Q_6g3yhsdj";
 var SERVICOS = {
   "Pessoa física": ["Planejamento financeiro pessoal", "Organização de dívidas", "Orientação para decisões importantes", "Outro assunto"],
   "Empresa": ["Gestão financeira", "Estruturação e organização do negócio", "Crédito e capital de giro", "Outro assunto"]
@@ -37,7 +37,6 @@ function salvarPedido(dados){
     headers: {
       "Content-Type": "application/json",
       "apikey": SUPABASE_ANON_KEY,
-      "Authorization": "Bearer " + SUPABASE_ANON_KEY,
       "Prefer": "return=minimal"
     },
     body: JSON.stringify(dados)
